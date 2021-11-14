@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"
       <div>WITH Continuous Integration</div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
