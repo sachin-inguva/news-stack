@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: news-stack Continuous Integration
+name: Continuous Integration
 
 # Controls when the workflow will run
 on:
@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  buildJob:
+  Build:
     name: Continuous Integration
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -25,21 +25,19 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        with:
-          node-version: 16.x
 
       # install dependencies
       - name: Install Dependencies..
         run: npm install
 
       # run linters
-      - name: Run ESLint
+      - name: Run ESLint..
         run: npm run lint
 
       # run code formatters
       - name: Run prettier..
         run: npm run prettier-fix
 
-      # build project
+      # Build project
       - name: Build..
         run: npm run build
