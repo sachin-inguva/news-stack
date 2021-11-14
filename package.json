@@ -33,7 +33,7 @@
   },
   "lint-staged": {
     "**/*": [
-      "eslint src/** --color",
+      "eslint src --color",
       "prettier --write --ignore-unknown src"
     ]
   },
