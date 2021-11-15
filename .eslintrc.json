@@ -5,7 +5,14 @@
     "es2021": true
   },
   "parser": "babel-eslint",
-  "ignorePatterns": "/*/**/*.json",
+  "ignorePatterns": [
+    "/*/**/*.json",
+    "/public/*",
+    "/*/**/*.svg",
+    "/*/**/*.css",
+    "/*/**/*.sh",
+    "*.md"
+  ],
   "extends": [
     "plugin:json/recommended",
     "eslint:recommended",
