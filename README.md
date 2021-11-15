@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# NewStack
+
+[![CI](https://github.com/sachin-inguva/news-stack/actions/workflows/main.yml/badge.svg)](https://github.com/sachin-inguva/news-stack/actions/workflows/main.yml)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
