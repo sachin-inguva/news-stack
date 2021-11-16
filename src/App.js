@@ -4,10 +4,10 @@ import 'normalize.css'
 import '@blueprintjs/core/lib/css/blueprint.css'
 import '@blueprintjs/icons/lib/css/blueprint-icons.css'
 
+import { Card } from '@blueprintjs/core'
 import { QueryClient, QueryClientProvider } from 'react-query'
 
 import Header from './Header'
-import { Card } from '@blueprintjs/core'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -21,7 +21,7 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Card>
+      <Card style={{ margin: 'auto 50px' }}>
         <Header />
       </Card>
     </QueryClientProvider>
