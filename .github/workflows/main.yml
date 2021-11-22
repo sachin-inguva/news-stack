@@ -17,7 +17,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    name: CI
+    name: CI/CD
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -42,6 +42,11 @@ jobs:
       - name: Build..
         run: npm run build
 
+      # deploy on gh-pages ONLY on push events
+      - name: Deploy on GitHub Pages
+      - run: npm run deploy  
+        if: github.event_name == 'push'
+
       # Completed
       - name: Completed!
-        run: echo Build successful!
+        run: echo Deployed successfully!
