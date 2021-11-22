@@ -1,6 +1,6 @@
 {
   "short_name": "NewStack",
-  "name": "Create React App Sample",
+  "name": "News Aggregator",
   "icons": [
     {
       "src": "favicon.ico",
