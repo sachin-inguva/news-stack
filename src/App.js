@@ -7,6 +7,7 @@ import '@blueprintjs/icons/lib/css/blueprint-icons.css'
 import { Card } from '@blueprintjs/core'
 import { QueryClient, QueryClientProvider } from 'react-query'
 
+import HackerNews from './HackerNews'
 import Header from './Header'
 
 const queryClient = new QueryClient({
@@ -21,8 +22,9 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Card style={{ margin: 'auto 50px' }}>
+      <Card>
         <Header />
+        <HackerNews />
       </Card>
     </QueryClientProvider>
   )
