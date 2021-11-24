@@ -10,6 +10,7 @@ pipeline {
             args '-p 3000:3000'
         }
     }
+    stages{
     stage('Building our image') { 
 15        steps { 
 16            script { 
@@ -33,4 +34,5 @@ pipeline {
 32                sh "docker rmi $registry:$BUILD_NUMBER" 
 33          }
 34  } 
+    }
 }
