@@ -1,14 +1,12 @@
 pipeline {
-    environment { 
-        registry = "pkumar12/newsstack" 
-        registryCredential = '331bd408-0471-4fdc-99b7-6870d2b7b7e6' 
-        dockerImage = '' 
-    }
+    
     agent any
+    tools(nodejs "node")
+
     stages{
         stage('Build'){
             steps {
-                sh 'npm start'
+                sh 'npm install'
             }
         }
     }
