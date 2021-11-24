@@ -4,12 +4,7 @@ pipeline {
         registryCredential = '331bd408-0471-4fdc-99b7-6870d2b7b7e6' 
         dockerImage = '' 
     }
-    agent {
-        docker {
-            image 'node:6-alpine'
-            args '-p 3000:3000'
-        }
-    }
+    agent any
     stages{
     stage('Building our image') { 
         steps { 
