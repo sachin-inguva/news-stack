@@ -7,10 +7,11 @@ pipeline {
     agent any
     stages{
         stage('Build'){
-            steps{
+            steps {
                 sh 'npm install'
             }
         }
+    }
     // stage('Building our image') { 
     //     steps { 
     //         script { 
@@ -35,4 +36,3 @@ pipeline {
     //         }
     //     } 
     // }
-}
