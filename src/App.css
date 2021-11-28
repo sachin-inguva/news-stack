@@ -42,17 +42,17 @@
   object-fit: cover;
 }
 
-.img{
-  height:15vw;
+.img {
+  height: 15vw;
   width: 100%;
 }
 
 a {
-	color: #1b28df;
-	text-decoration: none !important;
-	font-weight: bolder;
+  color: #1b28df;
+  text-decoration: none !important;
+  font-weight: bolder;
 }
 
-a:hover{
-	color:red;
+a:hover {
+  color: red;
 }
