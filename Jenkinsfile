@@ -9,13 +9,6 @@ pipeline {
                 sh 'npm install'
             }
         }
-    
-    
-        stage('Start Server'){
-            steps {
-                sh 'npm start'
-            }
-        }
     }
 }
     // stage('Building our image') { 
