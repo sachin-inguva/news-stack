@@ -1,6 +1,6 @@
 {
   "name": "news-stack",
-  "main": "./src/App.js",
+  "main": "./src/index.js",
   "homepage": "https://sachin-inguva.github.io/news-stack",
   "description": "News Aggregator",
   "version": "0.1.0",
