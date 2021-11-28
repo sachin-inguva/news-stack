@@ -42,12 +42,18 @@
   object-fit: cover;
 }
 
+<<<<<<< HEAD
 .img {
   height: 15vw;
+=======
+.img{
+  height:15vw;
+>>>>>>> ef652daf61f425755c77c5fe7d0072c4e3bd91ab
   width: 100%;
 }
 
 a {
+<<<<<<< HEAD
   color: #1b28df;
   text-decoration: none !important;
   font-weight: bolder;
@@ -56,3 +62,13 @@ a {
 a:hover {
   color: red;
 }
+=======
+	color: #1b28df;
+	text-decoration: none !important;
+	font-weight: bolder;
+}
+
+a:hover{
+	color:red;
+}
+>>>>>>> ef652daf61f425755c77c5fe7d0072c4e3bd91ab
