@@ -1,5 +1,5 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import 'normalize.css'
 import '@blueprintjs/core/lib/css/blueprint.css'
 import '@blueprintjs/icons/lib/css/blueprint-icons.css'
@@ -10,9 +10,8 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import HackerNews from './HackerNews'
 //import Header from './Header'
 import GoogleNews from './Google/GoogleNews'
-import Tabs from 'react-bootstrap/Tabs';
-import Tab from 'react-bootstrap/Tab';
-
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -25,18 +24,20 @@ const queryClient = new QueryClient({
 
 function App() {
   return (
-    
-      <Tabs defaultActiveKey="google" id="uncontrolled-tab-example" className="mb-3">
+    <Tabs
+      defaultActiveKey="google"
+      id="uncontrolled-tab-example"
+      className="mb-3"
+    >
       <Tab eventKey="google" title="Google News">
         <GoogleNews />
       </Tab>
-     <Tab eventKey="hacker" title="Hacker News">
-     <QueryClientProvider client={queryClient}>
-        <HackerNews />
+      <Tab eventKey="hacker" title="Hacker News">
+        <QueryClientProvider client={queryClient}>
+          <HackerNews />
         </QueryClientProvider>
-    </Tab>
+      </Tab>
     </Tabs>
-   
   )
 }
 
