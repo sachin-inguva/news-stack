@@ -9,6 +9,11 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage('Build Image'){
+            steps {
+                sh 'npm build'
+            }
+        }
     }
 }
     // stage('Building our image') { 
