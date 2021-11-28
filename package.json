@@ -1,6 +1,6 @@
 {
   "name": "news-stack",
-  "homepage": "https://sachin-inguva.github.io/news-stack",
+  "homepage": ".",
   "description": "News Aggregator",
   "version": "0.1.0",
   "private": true,
