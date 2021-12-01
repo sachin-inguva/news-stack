@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/sachin-inguva/news-stack/actions/workflows/main.yml/badge.svg)](https://github.com/sachin-inguva/news-stack/actions/workflows/main.yml)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7a971186-d6f7-449e-afdb-ab99e53f4786/deploy-status)](https://app.netlify.com/sites/news-stack/deploys)
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
