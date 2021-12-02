@@ -10,12 +10,13 @@ import {
   Classes,
   H5,
 } from '@blueprintjs/core'
-import { Popover2 } from '@blueprintjs/popover2'
+import { Popover2, Tooltip2 } from '@blueprintjs/popover2'
 import { useQuery } from 'react-query'
 import { formatDistanceToNowStrict } from 'date-fns'
 
 import { hnAxios } from './hnAxios'
 import { StyledLink } from './styled'
+import { UserInfoCard } from './UserInfo'
 
 const getIntentByScore = score => {
   if (score > 200 && score < 500) return 'warning'
@@ -58,10 +59,22 @@ function HNewsCard({ id }) {
           <Button icon="more" minimal />
         </Popover2>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <Tag icon="time" rightIcon="user" interactive round minimal>
-          {formatDistanceToNowStrict(data.data.time * 1000)} -{data.data.by}
-        </Tag>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+        }}
+      >
+        <div style={{ display: 'flex', alignContent: 'center' }}>
+          <Tag icon="time" round minimal>
+            {formatDistanceToNowStrict(data.data.time * 1000)}
+          </Tag>
+          <Tooltip2 content={<UserInfoCard id={data.data.by} />}>
+            <Tag minimal round interactive rightIcon="user">
+              {data.data.by}
+            </Tag>
+          </Tooltip2>
+        </div>
         <Tag
           minimal
           round
