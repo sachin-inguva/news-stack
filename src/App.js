@@ -25,17 +25,17 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <Tabs
-      defaultActiveKey="google"
+      defaultActiveKey="hacker"
       id="uncontrolled-tab-example"
       className="mb-3"
     >
-      <Tab eventKey="google" title="Google News">
-        <GoogleNews />
-      </Tab>
       <Tab eventKey="hacker" title="Hacker News">
         <QueryClientProvider client={queryClient}>
           <HackerNews />
         </QueryClientProvider>
+      </Tab>
+      <Tab eventKey="google" title="Google News">
+        <GoogleNews />
       </Tab>
     </Tabs>
   )
