@@ -1,7 +1,12 @@
 # NewStack
 
-[![CI](https://github.com/sachin-inguva/news-stack/actions/workflows/main.yml/badge.svg)](https://github.com/sachin-inguva/news-stack/actions/workflows/main.yml)
+Deployed to S3: https://news-stack.s3.us-east-2.amazonaws.com/index.html
 
+Deployed to Netlify: https://news-stack.netlify.app/
+
+Deployed on github-pages: https://sachin-inguva.github.io/news-stack/
+
+[![CI](https://github.com/sachin-inguva/news-stack/actions/workflows/main.yml/badge.svg)](https://github.com/sachin-inguva/news-stack/actions/workflows/main.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7a971186-d6f7-449e-afdb-ab99e53f4786/deploy-status)](https://app.netlify.com/sites/news-stack/deploys)
 
 ## Getting Started with Create React App
